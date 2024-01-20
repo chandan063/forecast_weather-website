@@ -88,6 +88,9 @@ h1{
     font-size: 1rem;
     font-weight: 500;
 }
+.current-weather .icon{
+    text-align: center;
+}
 .current-weather .icon img{
     max-width: 120px;
     margin-top: -15px;
@@ -117,7 +120,40 @@ h1{
     margin: 5px 0 -12px 0;
 }
 
+/* for small phones and tablets */
+@media (max-width: 1400px){
+    .weather-data .current-weather{
+        padding: 20px;
+    }
+    .weather-cards{
+        flex-wrap:wrap;
+    }
+    .weather-cards .card{
+        width: calc(100% / 4 -15px);
+    }
+}
 
-
+@media (max-width:1200px){
+    .weather-cards .card {
+        width: calc((100% / 3 - 15px));
+    }
+}
+@media (max-width:950px){
+    .weather-input {
+        width: 450px;
+    }
+    .weather-cards .card{
+        width: calc(100% / 2 - 10px);
+    }
+}
+@media (max-width:750px){
+    .container{
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .weather-input {
+        width: 100%;
+    }
+}
 
 
