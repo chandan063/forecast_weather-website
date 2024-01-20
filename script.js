@@ -5,7 +5,7 @@ const currentWeatherDiv=document.querySelector(".current-weather");
 const createWeatherCardsDiv=document.querySelector(".weather-cards");
 
 
-const API_KEY="1597a6022876aa7de0edde5b2de81e9f";//api key for openweahter app
+const API_KEY="1597a6022876aa7de0edde5b2de81e9f";//api key for openweahter app 
 
 const createWeatherCard = (cityName,weatherItem,index) => {
     if(index === 0){//Html for the main weather card
